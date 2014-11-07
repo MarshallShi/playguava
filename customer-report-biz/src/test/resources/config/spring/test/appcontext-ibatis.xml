@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <bean id="mySqlConverter" class="com.dianping.avatar.dao.ibatis.MySqlConverter"></bean>
+
+    <bean id="sqlMapClient" class="com.dianping.avatar.dao.ibatis.spring.LimitSqlMapClientFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:/config/sqlmap/sqlmapSMT/sqlmap-config.xml"/>
+        <property name="sqlConvert" ref="mySqlConverter"/>
+        <property name="useTransactionAwareDataSource" value="true"/>
+    </bean>
+
+    <bean id="daoRealizeTarget" class="com.dianping.avatar.dao.ibatis.IBatisGenericDaoImpl"
+          abstract="true">
+        <property name="sqlMapClient" ref="sqlMapClient"/>
+    </bean>
+</beans>

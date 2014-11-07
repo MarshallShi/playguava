@@ -1,0 +1,9 @@
+{
+    "reportName": "dprpt_tg_final_category_distinct",
+    "condition": {
+        "categoryName": "category_name"
+    },
+    "result": {
+        "categoryName": "category_name"
+    }
+}

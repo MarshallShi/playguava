@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="CRMRoleMapping">
+    <resultMap id="result" class="com.dianping.customer.report.biz.entity.CRMRoleMapping">
+        <result property="employeeId" column="EmployeeId"/>
+        <result property="crmRoleId" column="CRMRoleId"/>
+        <result property="loginId" column="loginId"/>
+        <result property="cityName" column="CityName"/>
+    </resultMap>
+
+    <sql id="sql_select">
+        SELECT
+            EmployeeId,
+            CRMRoleId,
+            loginId,
+            CityName
+        FROM
+            CRMRoleMapping
+    </sql>
+
+    <select id="getCRMRoleMappingByLoginId" resultMap="result">
+        <include refid="sql_select"/>
+        WHERE loginId=#loginId#;
+    </select>
+
+</sqlMap>

@@ -1,0 +1,30 @@
+{
+    "reportName": "dprpt_dp_key_shop_cnt_m",
+    "condition": {
+        "category": "cat_name",
+        "cityName": "city_name",
+        "districtName": "district_name",
+        "departmentName": "depart_name",
+        "time": "hp_cal_month"
+    },
+    "result": {
+        "cityId": "city_id",
+        "cityName": "city_name",
+        "category": "cat_name",
+        "districtId": "district_id",
+        "districtName": "district_name",
+        "departmentId": "depart_id",
+        "departmentName": "depart_name",
+        "status": "coop_status",
+        "shopGroupCount": "shopgrp_cnt",
+        "saleQty": "shop_sales_amt",
+        "saleQtyPre": "shop_sales_amt_pre",
+        "shopCount": "shop_cnt",
+        "shopCountPre": "shop_cnt_pre",
+        "dealCount": "deal_cnt",
+        "dealCountPre": "deal_cnt_pre",
+        "cashRatio": "cash_ratio",
+        "cashRatioPre": "cash_ratio_pre",
+        "time": "hp_cal_month"
+    }
+}
