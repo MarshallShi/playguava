@@ -1,4 +1,1 @@
-# TpMessageCenter
-
-设计文档：
-
+#play around the guava and some other interesting libraries.

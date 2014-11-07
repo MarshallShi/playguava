@@ -2,24 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>tp-message-center-api</module>
-        <module>tp-message-center-biz</module>
-        <module>tp-message-center-service</module>
-        <module>tp-message-center-mq</module>
-        <module>tp-message-center-web</module>
+        <module>playguava-biz</module>
+        <module>playguava-web</module>
     </modules>
 
-    <groupId>com.dianping</groupId>
-    <artifactId>tp-message-center</artifactId>
-    <name>tp-message-center</name>
+    <groupId>com.test</groupId>
+    <artifactId>playguava</artifactId>
+    <name>playguava</name>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-
-    <parent>
-        <artifactId>parent</artifactId>
-        <groupId>com.dianping.app</groupId>
-        <version>1.1.0</version>
-    </parent>
 
     <properties>
         <project.version.api>1.0.4-SNAPSHOT</project.version.api>
@@ -45,44 +36,12 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- begining of dp common -->
-            <dependency>
-                <groupId>com.dianping.platform</groupId>
-                <artifactId>platform-sdk</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.dianping</groupId>
-                <artifactId>avatar-interface</artifactId>
-                <version>1.0.1</version>
-            </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>16.0.1</version>
             </dependency>
-            <dependency>
-                <groupId>com.dianping.lion</groupId>
-                <artifactId>lion-dev</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.lion</groupId>
-                <artifactId>lion-alpha</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.lion</groupId>
-                <artifactId>lion-qa</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.lion</groupId>
-                <artifactId>lion-product</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
+            
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
@@ -104,22 +63,7 @@
                 <artifactId>xml-apis</artifactId>
                 <version>1.4.01</version>
             </dependency>
-            <!--for detail -->
-            <dependency>
-                <groupId>com.dianping</groupId>
-                <artifactId>avatar-cache</artifactId>
-                <version>2.4.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.cat</groupId>
-                <artifactId>cat-client</artifactId>
-                <version>1.1.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.dpsf</groupId>
-                <artifactId>dpsf-net</artifactId>
-                <version>2.2.2</version>
-            </dependency>
+            
             <dependency>
                 <groupId>net.sf.ehcache</groupId>
                 <artifactId>ehcache-core</artifactId>
@@ -129,17 +73,6 @@
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>2.6</version>
-            </dependency>
-            <dependency>
-                <groupId>com.dianping.tuangou</groupId>
-                <artifactId>tuangou-services-dal</artifactId>
-                <version>${project.services.version.dal}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>spring-orm</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>

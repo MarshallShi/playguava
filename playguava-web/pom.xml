@@ -11,7 +11,7 @@
 
     <artifactId>playguava-web</artifactId>
     <name>playguava-web</name>
-    <version>${project.version.web}</version>
+    <version>1.0.0</version>
     <packaging>war</packaging>
     
     <dependencies>

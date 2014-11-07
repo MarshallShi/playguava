@@ -11,7 +11,7 @@
 
     <artifactId>playguava-biz</artifactId>
     <name>playguava-biz</name>
-    <version>${project.version.biz}</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
