@@ -1,0 +1,13 @@
+*/target/*
+*.class
+*/test-output/*
+.settings
+.project
+**/.settings
+**/.classpath
+**/.eclipse
+**/.project
+**/target
+**/test-output
+*.iml
+.idea/
