@@ -8,6 +8,7 @@
 **/.eclipse
 **/.project
 **/target
+**/*.class
 **/test-output
 *.iml
 .idea/

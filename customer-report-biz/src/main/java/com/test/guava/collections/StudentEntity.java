@@ -1,6 +1,8 @@
 package com.test.guava.collections;
 
-public class StudentEntity {
+import com.google.common.collect.ComparisonChain;
+
+public class StudentEntity implements Comparable<StudentEntity> {
 
 	private Integer id;
 	private String name;
@@ -30,6 +32,12 @@ public class StudentEntity {
 		se.setName(name);
 		se.setGender(gender);
 		return se;
+	}
+	
+	@Override
+	public int compareTo(StudentEntity se) {
+		return ComparisonChain.start().compare(id, se.id)
+				.compare(name, se.name).compare(gender, se.gender).result();
 	}
 	
 }

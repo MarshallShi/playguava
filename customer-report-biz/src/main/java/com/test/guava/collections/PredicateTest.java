@@ -47,7 +47,6 @@ public class PredicateTest {
 	    for (StudentEntity se : maleStudent) {
 	        System.out.print(se.getName() + "," + se.getGender());
 	    }
-		
 	}
 
 }
